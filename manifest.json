@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "CSDN easy",
+	"version": "0.0.1",
+	"description": "CSDN可复制",
+	"author": "HOcto6",
+	"icons": {
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"host_permissions": [
+		"https://blog.csdn.net/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://blog.csdn.net/*"
+			],
+			"js": [
+				"content-script.js"
+			]
+		}
+	]
+}
